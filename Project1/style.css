@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    padding-top: 45vh;
+}
+ 
+
+button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 12px 15px;
+    
+}
