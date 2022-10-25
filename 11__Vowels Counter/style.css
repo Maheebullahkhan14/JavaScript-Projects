@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: #dff9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.card{
+    background-color: #2d3436;
+    width: 600px;
+    padding: 15px;
+    color: #c8d5da;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 25px;
+}
+.card h2{
+    padding-left: 100px;
+    padding-bottom: 15px;
+    margin-left: 12px;
+}
+textarea{
+    background-color: #0f1113;
+    border: none;
+    border-radius: 5px;
+    height: 200px;
+    width: 400px;
+    resize: none;
+    color: #F8EFBA;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 15px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+
+}
+.counting {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.counting h3{
+    padding-bottom: 10px;
+}
+.counting p{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+#count{
+    width: 100px;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: #fad390;
+   color: black;
+   font: bold;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+}
+.counting p.blink{
+    box-shadow: 0px 0px 6px #079992,
+    0px 0px 12px #079992,
+    0px 0px 18px #079992
+    0px 0px 24px #079992;
+}

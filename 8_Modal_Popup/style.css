@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(207, 185, 185);
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.Modal{
+display: none;
+place-items: center;
+background-color: white;
+position: fixed;
+
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    width: 40rem;
+    position: relative;    
+}
+.card #Multiply{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.card .img img{
+    display: block;
+}
+img{
+    width: 200px;
+}
+
+/* button */
+button{
+    padding: 10px 15px;
+    background-color: darkkhaki;
+    color: black;
+    border: 0.5px solid dimgray
+}
+
+.about h2{
+    padding-bottom: 20px;
+}
+.about p{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.about form{
+    display: flex;
+    
+    justify-content: space-between;
+   margin-top: 3rem;
+   width: 100%;
+}
+.about input{
+    font-size: 13px;
+    background-color: rgb(184, 41, 41);
+    padding: 10px 20px ;
+    border: none;
+    color: whitesmoke;
+
+}
+.about input[type="email"]{
+    background-color: rgb(238, 229, 229);
+    width: 100%;
+    padding: 0.8rem;
+    outline:none;}
+
+@media screen and (max-width:809px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 90vh;
+        text-align: center;
+    }
+
+    .about p{
+        font-size: 0.8rem;
+        padding-bottom: 5px;
+    }
+    img{
+        margin-top: 2rem;
+        width: 25vw;
+        
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .about form{
+        display: block;
+        
+       
+       
+      
+    }
+    .about h2{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .Modal .card form input[type="email"],
+    .Modal .card form input[type="email"] ::placeholder{
+        text-align: center;
+    }
+    .about input{
+        display: block;
+        background-color: rgb(184, 41, 41);
+        padding: 10px 20px ;
+        border: none;
+        color: whitesmoke;
+        width: 100%;
+        margin-bottom: 1rem;
+    
+    }
+
+}
+

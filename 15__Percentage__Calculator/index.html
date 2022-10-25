@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="sub1">
+                <input type="number" required  placeholder="Maths" min="0" max="100" id="Maths" class="number">
+                <input type="number"  required placeholder="History" min="0" max="100" id="History" class="number">
+            </div>
+            <div class="sub2">
+                <input type="number" required  placeholder="Science" min="0" max="100" id="Science" class="number">
+                <input type="number" required  placeholder="English" min="0" max="100" id="English" class="number" >
+            </div>
+
+            
+
+            <button id="Btn" onclick="calculate()" >Calculate</button>
+            <div class="Resultbox">
+                <p id="showdata" ></p>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

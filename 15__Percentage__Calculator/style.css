@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(215,136,136,1) 50%, rgba(252,176,69,1) 100%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 45px 0.1px;
+    font-size: 30px;
+    color: whitesmoke;
+    background: hsla(0, 4%, 23%, 0.5);
+        
+}
+input{
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgb(24, 22, 22);
+    color: rgb(207, 196, 196);
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    
+    border-radius: 5px;
+    border: none;
+ background-color: rgb(24, 22, 21);
+    padding: 5px 10px;
+    color: rgb(184, 169, 169);
+    margin-left: 130px;
+
+}
+
+.output2{
+    text-align: start;
+    padding: 2px;
+}
+#showdata{
+    color: rgb(223, 205, 205);
+    margin-top:25px;
+    font-size: 20px;
+}
+
+
