@@ -19,3 +19,11 @@ List of JavaScript Projects that i had Completed .
 16. Quiz App
 17. Number Guessing Game
 18. Words Counting Game
+19. Client Side Login
+20. Exchange Rate calculator
+21. Dice Roll Game
+22. Weather App
+23. Music Player App
+24. Rock Paper Scissor Game
+25. Search Box
+
