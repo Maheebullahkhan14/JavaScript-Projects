@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(29, 26, 26);
+    color: rgb(247, 247, 138);
+}
+
+.main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+/* .play1card p{
+    margin-left: 25px;
+} */
+
+img{
+    width: 200px;
+    margin: 20px;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}

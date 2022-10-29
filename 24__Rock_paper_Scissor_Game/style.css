@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('game.png');
+    background-position: center;
+    background-size: cover;
+
+
+}
+.card{
+    display: flex;
+    color: #fae609;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #192a56;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+.choose{
+    margin-top: 25px;
+}
+.Header{
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.butt {
+
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 280px;
+    justify-content: space-around;
+
+}
+.img{
+    margin-top: 20px;
+    text-align: center;
+}
+img{
+    width: 100px;
+    
+}
+.endbtn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+}
+.endbtn button{
+
+    padding: 5px 10px ;
+}
+
+
+
+#Rock,#Paper,#Scissor{
+    
+   
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    background-color: #fae609;
+    border-radius: 25px;
+    border: none;
+    font:bold
+    
+}
+.score-Card{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    width: 200px;
+}
+.score-Card span{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#reset{
+    padding: 7px 15px ;
+    background-color: #fae609;
+    border-radius: 25px;
+    border: none;
+}
+#Output{
+    margin-top: 25px;
+    background-color: #fae609;
+    border-radius: 20px;
+    padding: 15px;
+    color:#192a56;
+    
+}
+#check{
+    background-color: #fae609;
+    border-radius: 8px;
+    border: none;
+}

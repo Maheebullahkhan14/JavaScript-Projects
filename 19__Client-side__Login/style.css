@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d3d3d;
+    font-size: 18px;
+}
+.container{
+    background-color:rgb(253, 246, 246);
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    
+}
+.header h3{
+    padding: 15px 30px;
+    font-size: 30px;
+}
+.form{
+    padding: 5px 35px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+
+
+}
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    right: 10px;
+    top : 30px
+    
+}
+.form-control.succes i.fa-circle-check{
+    color: #2eec71;
+    visibility: visible;
+}
+.form-control.error i.fa-circle-exclamation{
+    color: #2eec71;
+    visibility: visible;
+}
+
+
+
+
+.form-control input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+
+}
+.form-control small{
+    visibility: hidden;
+
+    
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+.form-control.success input{
+    border-color: #2eec71;
+} 
+.form-control.error input{
+    border-color: #e74c3c;
+} 
+
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+
+
+#btn{
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    background-color: rgb(169, 126, 209);
+    color: white;
+}
+
+@media(max-width : 500px){
+    .container{
+        width: 300px;
+        height: 500px;
+
+}
+
+.header h3{
+    padding: 10px 20px;
+    font-size: 25px;
+}
+#btn{
+    margin: 10px auto;
+    padding: 8px 8px;
+    border-radius: 5px;
+    display: block;
+    width: 100px;
+    font-size: 15px;
+   
+}
+body{
+    font-size: 15px;
+}
+.form-control {
+    margin-bottom: 5px;
+	padding-bottom: 10px;
+	position: relative;
+
+
+}
+.form-control input{
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+
+}
+.form-control small{
+    
+    visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+}
