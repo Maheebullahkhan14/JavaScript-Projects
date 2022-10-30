@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class=" btn first">Lor</div>
+        <div class=" btn sec">Lor</div>
+        <div class="btn third">Lor</div>
+        <div class="btn fourth">Lor</div>
+        <div class="btn fifth">Lor</div>
+    </div>
+</body>
+<script>
+    var colorarr = ['red' ,'dimgray' ,'pink' ,'whitesmoke' ,'orangered']
+
+    const buttons = document.querySelectorAll('.btn')
+    const body = document.querySelector('body')
+    var index = 0
+    const first =document.querySelector('.first')
+
+
+
+    buttons.forEach(function(button){
+        button.addEventListener('click' , function(){
+            if(button.classList.contains('first')){
+                body.style.backgroundColor = colorarr[index]
+            }
+            else if(button.classList.contains('sec')){
+                body.style.backgroundColor = colorarr[1]
+            }
+            else if(button.classList.contains('third')){
+                body.style.backgroundColor = colorarr[2]
+            }
+            else if(button.classList.contains('fourth')){
+                body.style.backgroundColor = colorarr[3]
+            }
+            else if(button.classList.contains('fifth')){
+                body.style.backgroundColor = colorarr[4]
+            }
+        })
+    })
+
+
+</script>
+</html>

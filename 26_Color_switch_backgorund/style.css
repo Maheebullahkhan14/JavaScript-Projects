@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    
+}
+.first ,.sec ,.third ,.fourth ,.fifth{
+    margin-right:45px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.first{
+    background-color: red;
+    border: 2px solid black ;
+    outline: 1px;
+}
+.sec{
+    background-color: dimgray;
+    border: 2px solid black ;
+    outline: 1px;
+}
+.third{
+    background-color: pink;
+    border: 2px solid black ;
+    outline: 1px;
+}
+.fourth{
+    background-color: whitesmoke;
+    border: 2px solid black ;
+    outline: 1px;
+}
+.fifth{
+    background-color: orangered;
+    border: 2px solid black ;
+    outline: 1px;
+}
