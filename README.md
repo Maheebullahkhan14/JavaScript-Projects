@@ -30,4 +30,7 @@ List of JavaScript Projects that i had Completed .
 27. Drum kit
 28. Expense Tracker App
 30. Google keep projects
+31. Palindrome_Checker
+32. Movie_App_Remaining
+33. Code_Black Jack
 
