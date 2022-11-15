@@ -1,0 +1,203 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.video{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.video video{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* App */
+.app{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "a a a a s s"
+    "a a a a s s"
+    "d d d d s s"
+    "d d d d s s";
+    transition: 500ms ease-in-out;
+   
+}
+
+.audio {
+    grid-area:a;
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.durations {
+    grid-area:d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25%;
+    
+}
+.durations .duration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.duration img{
+    cursor: pointer;
+}
+.duration p{
+    color: white;
+}
+.inactive{
+    opacity: 0;
+}
+.seasons {
+    grid-area:s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40% 0px;   
+    /* background-color: aqua; */
+}
+.seasons .season img{
+    width: 55px;
+    cursor: pointer;
+}
+.audio img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.audio .progress-bar{
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    margin: 0 40px;
+    
+}
+.audio .progress-bar svg{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+
+}
+.audio .time{
+    position:absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Duration */
+.duration img{
+    width: 50px;
+}
+
+
+
+@media screen and (max-width :600px){
+    .app{
+        display: grid;
+        grid-template-areas: 
+        "a"
+        "a"
+        "a"
+        "d";
+    }
+    .video video{
+        height: 100%;
+    }
+
+    .audio img{
+        width: 40px;
+        cursor: pointer;
+    }
+    
+    .audio .progress-bar{
+        width: 175px;
+        height: 175px;
+        margin: 0 20px;
+        
+    }
+    .audio .progress-bar svg{
+        width: 175px;
+        height: 175px;
+    
+    }
+    .audio .progress-bar .rect1,rect{
+        width: 125px;
+        height: 125px;
+    }
+    .audio .time{
+        font-size: 20px;
+        
+    }
+    .durations{
+        padding: 0 10%;
+        
+    }
+    .durations .duration img{
+        width: 40px;
+    }
+    .durations{
+        font-size: 15px;
+    }
+    .seasons .season img{
+        width: 40px;
+    }
+    .seasons {
+        background-color: white;
+        position: absolute;
+        top:15px;
+        left: -210px;
+        padding: 10px;
+        flex-direction: row;
+        border-radius: 0 5px 5px 0;
+        transition: all 500ms ease-in-out;
+    }
+    .season{
+        margin-left: 10px;
+    }
+    .open{
+        left:0px ;
+    }
+    .toggle-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        
+        
+        
+    }
+    .rotate{
+        transform: rotate(180deg);
+    }
+    .toggle-menu img{
+        
+        width: 20px;
+        cursor: pointer;
+        
+    }
+    .toggle-menu:hover{
+        background-color: rgb(167, 167, 175);
+        transition: 0.2s ease-in;
+    }
+}
