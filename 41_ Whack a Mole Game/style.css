@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+}
+.score{
+    display: flex;
+    width: 340px;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.score h3{
+    background-color: rgb(162, 230, 230);
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 7px;
+}
+.rightcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+.rightcontainer h1{
+    color: white;
+}
+.btns button{
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    outline: none;
+}
+.btns button:hover{
+    background-color: blanchedalmond;
+    color: black;
+    font: bold;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.leftGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: aqua; */
+    width: 500px;
+    margin-top: 20px;
+}
+
+.square{
+    width: 130px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.mole{
+    background-image: url('mole.png');
+    background-size: cover;
+}
