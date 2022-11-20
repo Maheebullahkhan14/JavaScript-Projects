@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body{
+    background-color: rgb(204, 197, 197);
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: rgb(41, 40, 40);
+    font-size: xx-large;
+}
+
+.info{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    margin: 50px;
+    font-family: 600;
+    font-size: large;
+}
+
+.nav{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background-color: grey;
+    margin: 0;
+    padding: 5px;
+    font-size: 25px;
+}
+.input{
+    background-color: #D1D5DB;
+    padding: 5px;
+    width: 20%;
+    margin-left: 1rem;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-family: 'Inconsolata', monospace;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Inconsolata', monospace;
+}
+.btndiv{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.btndiv button{
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-family: 'Inconsolata',monospace;
+    background-color: #D1D5DB;
+}
+.btndiv button:hover{
+    background-color: lightslategray;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inconsolata', monospace;
+    
+}
+.footer a{
+    padding-right: 50px;
+    text-decoration: none;
+    color: #6B7280;
+}
+.outputBox{
+    font-size: x-large;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.profitBg{
+    background-color: #00BF19;
+}
+
+.lossBg{
+    background-color: #F50057;
+}
