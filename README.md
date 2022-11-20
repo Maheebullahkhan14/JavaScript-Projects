@@ -2,7 +2,6 @@
 This is the entry repository for all of my projects guided from JSBeginners.com.
 List of JavaScript Projects that i had Completed .
 1. Change Background Color Project
-https://images.unsplash.com/photo-1567157577867-05ccb1388e66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80
 2. Hex Change Background Color Project
 3. Pass the Message Project
 4. Random Quotes Project
