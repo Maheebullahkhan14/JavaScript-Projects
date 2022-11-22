@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minion Eyes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="face">
+        <div class="eyes">
+            <div class="eye">
+                <div class="ball"></div>
+            </div>
+            <div class="eye">
+                <div class="ball"></div>
+            </div>
+        </div>
+        <div class="mouth">
+
+        </div>
+    </div>
+</body>
+<script>
+
+    let Pupils = document.getElementsByClassName('ball')
+    let pupilsArr = Array.from(Pupils)
+    // Pupil Movement
+    //Because to keep the eye ball inside the eyes we want the data into -100 to +100
+    
+    let PupilXstartpoint = -100
+    let PupilYstartpoint = -100
+    let PupilRange = 200
+
+    let MouseXStartpoint = 0
+    let MouseXEndPoint = window.innerWidth 
+
+    let MouseYstartpoint = 0
+    let MouseYEndPoint = window.innerHeight
+
+    let currentXposition = 0 , currentYposition = 0
+    let fractionXvalue = 0 ,fractionYvalue = 0
+
+    let MouseXrange = MouseXEndPoint - MouseXStartpoint //width - startingPoint
+    let MouseYrange = MouseYEndPoint - MouseYstartpoint //Height - startingpoint
+
+    const mouseMove = (event) => {
+        //To get current Position of Mouse
+        currentXposition = event.clientX - MouseXStartpoint
+        currentYposition = event.clientY - MouseYstartpoint 
+
+        fractionXvalue = currentXposition / MouseXrange //0 to 1 value
+        fractionYvalue = currentYposition / MouseYrange //0 to 1 value
+
+        let PupilXcurrentPosition = PupilXstartpoint + (fractionXvalue * PupilRange) //-100 + (0 to 1 ) * 200px
+        let PupilYcurrentPosition = PupilYstartpoint + (fractionYvalue * PupilRange)
+        console.log(PupilXcurrentPosition)
+        console.log(PupilYcurrentPosition) //-100 + (0 to 1 ) * 200px
+
+        pupilsArr.forEach((pupil) => {
+            pupil.style.transform = `translate(${PupilXcurrentPosition}px , ${PupilYcurrentPosition}px)`
+            
+        })
+    
+    }
+    //whenEver the size of the window changes the data will change from this function
+    const windowresize = (event) =>{
+        MouseXEndPoint = window.innerWidth 
+        MouseYEndPoint = window.innerHeight
+
+        MouseXrange = MouseXEndPoint - MouseXStartpoint 
+        MouseYrange = MouseYEndPoint - MouseYstartpoint
+    }
+
+    window.addEventListener('mousemove', mouseMove);
+    window.addEventListener('resize', windowresize)
+</script>
+
+</html>
